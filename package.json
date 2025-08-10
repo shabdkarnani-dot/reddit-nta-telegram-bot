@@ -1,0 +1,28 @@
+{
+  "name": "reddit-nta-telegram-bot-modern",
+  "version": "1.0.0",
+  "description": "Modern Telegram notifier for Reddit and NTA RSS",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "lint": "eslint . --ext .ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^8.4.0",
+    "dotenv": "^16.0.3",
+    "node-fetch": "^2.6.7",
+    "rss-parser": "^3.12.0",
+    "telegraf": "^4.12.2",
+    "cron": "^2.3.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5",
+    "eslint": "^8.31.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "@typescript-eslint/eslint-plugin": "^5.46.0"
+  }
+}
